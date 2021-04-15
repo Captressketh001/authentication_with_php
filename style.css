@@ -1,0 +1,30 @@
+body{
+    height: 100%;
+}
+.container{
+    display: grid;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    color: purple;
+}
+input{
+    margin-bottom: 10px;
+   height: 30px;
+   width: 100%;
+   border: 1px solid purple;
+   border-radius: 10px;
+}
+input:focus{
+    outline: none;
+}
+.welcome{
+    text-align: center;
+    margin-top: 50px;
+}
+.welcome1{
+    text-align: center;
+    margin-top: 100px;
+    color: purple;
+}

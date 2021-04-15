@@ -6,38 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
 </head>
-<style>
-    .container{
-        display: grid;
-        justify-content: center;
-    }
-</style>
+<link rel="stylesheet" href="style.css">
 <body>
     <main>
         <div class="container">
-            <h1>Register</h1>
+            <h2>Register</h2>
             <div>
-                <label for="fname">First Name</label>
-                <div>
-                    <input type="text" name="fname" id="fname">
-                </div>
-                <label for="lname">Last Name</label>
-                <div>
-                    <input type="text" name="lname" id="lname">
-                </div>
-                <label for="email">Email</label>
-                <div>
-                    <input type="email" name="email" id="email">
-                </div>
-                <label for="password">Password</label>
-                <div>
-                    <input type="password" name="password" id="password">
-                </div>
-                <label for="conf_password">Confirm Password</label>
-                <div>
-                    <input type="password" name="c_password" id="c_password">
-                </div><br>
-                <input type="button" value="Register">
+                <form method="POST" action="submit-form.php">
+                    <label for="fname">First Name</label>
+                    <div>
+                        <input type="text" name="fname" id="fname" required>
+                    </div>
+                    <label for="lname">Last Name</label>
+                    <div>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>
+                    <label for="email">Email</label>
+                    <div>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <label for="password">Password</label>
+                    <div>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <br>
+                    <input type="submit" value="Register" name="submit">
+                </form><br>
+                Already have an account?<a href="login.php"> Login</a>
             </div>
         </div>
     </main>

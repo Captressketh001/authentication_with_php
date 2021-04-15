@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Reset Password</title>
 </head>
-<style>
-    .container{
-        display: grid;
-        justify-content: center;
-    }
-</style>
+<link rel="stylesheet" href="style.css">
 <body>
     <main>
         <div class="container">
-            <h1>Reset Password</h1>
+            <h2>Reset Password</h2>
             <div>
+                <form action="reset_form.php" method="POST">
+                <label for="email">Email</label>
+                    <div>
+                        <input type="email" name="email" id="email" required>
+                    </div> <br>
+                    <label for="password">New Password</label>
+                    <div>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <br>
+                    <input type="submit" value="Reset Password" name="submit">
+                </form>
                 
-                <div>
-                    <input type="email" name="email" id="email">
-                </div>
-                <br>
-                <input type="button" value="Reset Password">
             </div>
         </div>
     </main>
